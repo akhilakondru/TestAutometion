@@ -18,13 +18,14 @@ public class LocationPage extends BaseClass {
 	public LocationPage() {
 		PageFactory.initElements(driver, this);
 	}
-	public void typeText() {
+	public WebElement getButtonLocation() {
+		return locationTextBox;
 		
 	}
 	public void enterDelaivaryLocation(String delaiveryLocation) {
 		this.locationTextBox.sendKeys("locationText");
-		WebElement selectLocation=driver.findElement(By.xpath("//button[@tabIndex='2']//span[contains(text()='hyderabad])"));
-		clickElement(selectLocation);
+		//WebElement selectLocation=driver.findElement(By.xpath("//button[@tabIndex='2']//span[contains(text()='hyderabad])"));
+		//clickElement(selectLocation);
 		
 		
 	}
